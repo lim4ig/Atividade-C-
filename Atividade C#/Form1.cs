@@ -1,0 +1,105 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Atividade_C_
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        //Atividade 1
+        private void btNegPosi_Click(object sender, EventArgs e)
+        {
+            string numeroSelecionado = txtCampo.Text;
+
+            if (int.Parse(numeroSelecionado) > 0)
+            {
+                MessageBox.Show("O número selecionado é Positivo!");
+            }
+
+            else if (int.Parse(numeroSelecionado) < 0)
+            {
+                MessageBox.Show("O número selecionado é Negativo!");
+            }
+
+            else if (int.Parse(numeroSelecionado) == 0)
+            {
+                MessageBox.Show("O número selecionado é 0!");
+            }
+            
+
+        }
+
+        //Atividade 2
+        private void btNumMaior_Click(object sender, EventArgs e)
+        {
+            string primeiroNumero = txtCampo.Text;
+            string segundoNumero = txtCampo2.Text;
+            string terceiroNumero = txtCampo3.Text;
+
+            double n1 = double.Parse(primeiroNumero);
+            double n2 = double.Parse(segundoNumero);
+            double n3 = double.Parse(terceiroNumero);
+
+            double maior = n1;
+
+            if (n2 > maior)
+            { maior = n2; }
+
+            if (n3 > maior) 
+            { maior = n3; }
+
+            MessageBox.Show("O maior número é: " + maior);
+        }
+
+        //Atividade 3
+        private void btVogConso_Click(object sender, EventArgs e)
+        {
+            string validarLetra = txtCampo.Text;
+
+            if (!string.IsNullOrEmpty(validarLetra))
+            {
+                char letra = char.ToLower(validarLetra[0]);
+            }
+            if (validarLetra == "a" || validarLetra == "e" || validarLetra == "i" || validarLetra == "o" || validarLetra == "u")
+            {
+                MessageBox.Show("Essa letra é uma Vogal!");
+            }
+            else
+            {
+                MessageBox.Show("Essa letra é uma Consoante!");
+            }
+
+        }
+
+        //Atividade 4
+        private void btMes_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

@@ -1,0 +1,10 @@
+C:\Users\igor.lmatheus\source\repos\Atividade C#\Atividade C#\bin\Debug\Atividade C#.exe.config
+C:\Users\igor.lmatheus\source\repos\Atividade C#\Atividade C#\bin\Debug\Atividade C#.exe
+C:\Users\igor.lmatheus\source\repos\Atividade C#\Atividade C#\bin\Debug\Atividade C#.pdb
+C:\Users\igor.lmatheus\source\repos\Atividade C#\Atividade C#\obj\Debug\Atividade C#.csproj.AssemblyReference.cache
+C:\Users\igor.lmatheus\source\repos\Atividade C#\Atividade C#\obj\Debug\Atividade_C_.Form1.resources
+C:\Users\igor.lmatheus\source\repos\Atividade C#\Atividade C#\obj\Debug\Atividade_C_.Properties.Resources.resources
+C:\Users\igor.lmatheus\source\repos\Atividade C#\Atividade C#\obj\Debug\Atividade C#.csproj.GenerateResource.cache
+C:\Users\igor.lmatheus\source\repos\Atividade C#\Atividade C#\obj\Debug\Atividade C#.csproj.CoreCompileInputs.cache
+C:\Users\igor.lmatheus\source\repos\Atividade C#\Atividade C#\obj\Debug\Atividade C#.exe
+C:\Users\igor.lmatheus\source\repos\Atividade C#\Atividade C#\obj\Debug\Atividade C#.pdb
