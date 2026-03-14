@@ -97,25 +97,25 @@ namespace Atividade_C_
         }
 
         //Atividade 4
-        private void btMes_Click_1(object sender, EventArgs e)
+        private void btMes_Click(object sender, EventArgs e)
         {
-            string validarMes = txtCampo.Text.ToLower().Trim();
-            int dias = 0;
+            string validarMes = txtCampo.Text;
 
-            switch (validarMes)
+            if (string.IsNullOrWhiteSpace(validarMes))
             {
-                case "4":
-                case "04":
-                case "abril":
-                case "6":
-                case "06":
-                case "junho":
-                case "9":
-                case "09":
-                case "setembro":
-                case "11":
-                case "novembro":
-                    dias = 30;
+                MessageBox.Show("Por favor, digite algo.");
+                return;
+            }
+
+            string entrada = validarMes.Trim().ToLowerInvariant();
+            int dias;
+
+            switch (entrada)
+            {
+                case "1":
+                case "01":
+                case "janeiro":
+                    dias = 31;
                     break;
 
                 case "2":
@@ -124,61 +124,72 @@ namespace Atividade_C_
                     dias = 28;
                     break;
 
+                case "3":
+                case "03":
+                case "marco":
+                case "março":
+                    dias = 31;
+                    break;
+
+                case "4":
+                case "04":
+                case "abril":
+                    dias = 30;
+                    break;
+
+                case "5":
+                case "05":
+                case "maio":
+                    dias = 31;
+                    break;
+
+                case "6":
+                case "06":
+                case "junho":
+                    dias = 30;
+                    break;
+
+                case "7":
+                case "07":
+                case "julho":
+                    dias = 31;
+                    break;
+
+                case "8":
+                case "08":
+                case "agosto":
+                    dias = 31;
+                    break;
+
+                case "9":
+                case "09":
+                case "setembro":
+                    dias = 30;
+                    break;
+
+                case "10":
+                case "outubro":
+                    dias = 31;
+                    break;
+
+                case "11":
+                case "novembro":
+                    dias = 30;
+                    break;
+
+                case "12":
+                case "dezembro":
+                    dias = 31;
+                    break;
+
                 default:
-                    MessageBox.Show("Este mês tem 31 dias!!!");
+                    MessageBox.Show("Mês inválido. Digite um número (1-12) ou o nome do mês.");
                     return;
             }
 
-            MessageBox.Show($"Este mês tem" + dias + " dias!!!");
-        }
-
-        //Atividade 5
-        private void btMedia_Click(object sender, EventArgs e)
-        {
-            string nome = txtNome.Text;
-            double n1 = Convert.ToDouble(txtCampo.Text);
-            double n2 = Convert.ToDouble(txtCampo.Text);
-            double n3 = Convert.ToDouble(txtCampo.Text);
-
-            double media = (n1 + n2 + n3) / 3;
-
-            if (media >= 7)
-            {
-                MessageBox.Show("O aluno " + nome + " está APROVADO! Média: " + media);
-            }
-            else
-            {
-                MessageBox.Show("O aluno " + nome + " está REPROVADO! Média: " + media);
-            }
-        }
-
-        //Atividade 6
-        private void btAumento_Click(object sender, EventArgs e)
-        {
-            double salarioAtual = Convert.ToDouble(txtCampo.Text);
-            double novoSalario = 0;
-            double aumento = 0;
-
-            if (salarioAtual < 1000)
-            {
-                aumento = salarioAtual * 0.20;
-            }
-            else if (salarioAtual >= 1000 || salarioAtual <= 2000)
-            {
-                aumento = salarioAtual * 0.15;
-            }
-            else
-            {
-                aumento = salarioAtual * 0.10;
-            }
-            novoSalario = salarioAtual + aumento;
-
-            MessageBox.Show("Aumento de: R$ " + aumento +
-                            "\nSeu salário é: R$ " + novoSalario);
+            MessageBox.Show($"Este mês tem: {dias} dias");
         }
     }
-    
-    
 }
 
     

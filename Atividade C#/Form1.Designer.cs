@@ -37,9 +37,14 @@
             this.btVogConso = new System.Windows.Forms.Button();
             this.btMes = new System.Windows.Forms.Button();
             this.btMedia = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btAumento = new System.Windows.Forms.Button();
             this.txtCampo2 = new System.Windows.Forms.TextBox();
             this.txtCampo3 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtCampo
@@ -102,6 +107,7 @@
             this.btMes.TabIndex = 9;
             this.btMes.Text = "Mês";
             this.btMes.UseVisualStyleBackColor = true;
+            this.btMes.Click += new System.EventHandler(this.btMes_Click_1);
             // 
             // btMedia
             // 
@@ -111,15 +117,17 @@
             this.btMedia.TabIndex = 10;
             this.btMedia.Text = "Média";
             this.btMedia.UseVisualStyleBackColor = true;
+            this.btMedia.Click += new System.EventHandler(this.btMedia_Click);
             // 
-            // button7
+            // btAumento
             // 
-            this.button7.Location = new System.Drawing.Point(643, 265);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(124, 66);
-            this.button7.TabIndex = 11;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btAumento.Location = new System.Drawing.Point(643, 265);
+            this.btAumento.Name = "btAumento";
+            this.btAumento.Size = new System.Drawing.Size(124, 66);
+            this.btAumento.TabIndex = 11;
+            this.btAumento.Text = "Aumento";
+            this.btAumento.UseVisualStyleBackColor = true;
+            this.btAumento.Click += new System.EventHandler(this.btAumento_Click);
             // 
             // txtCampo2
             // 
@@ -135,18 +143,66 @@
             this.txtCampo3.Size = new System.Drawing.Size(261, 20);
             this.txtCampo3.TabIndex = 13;
             // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(43, 377);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(261, 20);
+            this.txtNome.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(40, 130);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Campo";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(40, 218);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Campo2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(40, 312);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Campo3";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(40, 400);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Nome";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(865, 436);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.btNegPosi);
             this.Controls.Add(this.txtCampo3);
             this.Controls.Add(this.txtCampo2);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.btAumento);
             this.Controls.Add(this.btMedia);
             this.Controls.Add(this.btMes);
             this.Controls.Add(this.btVogConso);
-            this.Controls.Add(this.btNegPosi);
             this.Controls.Add(this.btNumMaior);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtCampo);
@@ -168,9 +224,14 @@
         private System.Windows.Forms.Button btVogConso;
         private System.Windows.Forms.Button btMes;
         private System.Windows.Forms.Button btMedia;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btAumento;
         private System.Windows.Forms.TextBox txtCampo2;
         private System.Windows.Forms.TextBox txtCampo3;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 

@@ -97,13 +97,35 @@ namespace Atividade_C_
         }
 
         //Atividade 4
-        private void btMes_Click_1(object sender, EventArgs e)
-        {
-            string validarMes = txtCampo.Text.ToLower().Trim();
-            int dias = 0;
+        private void btMes_Click(object sender, EventArgs e)
+        { 
+            string validarMes = txtCampo.Text;
+            int dias;
 
             switch (validarMes)
             {
+                case "1":
+                case "01":
+                case "janeiro":
+                case "3":
+                case "03":
+                case "março":
+                case "marco":
+                case "5":
+                case "05":
+                case "maio":
+                case "7":
+                case "07":
+                case "julho":
+                case "8":
+                case "08":
+                case "agosto":
+                case "10":
+                case "outubro":
+                case "12":
+                case "dezembro":
+                    break;
+
                 case "4":
                 case "04":
                 case "abril":
@@ -115,70 +137,17 @@ namespace Atividade_C_
                 case "setembro":
                 case "11":
                 case "novembro":
-                    dias = 30;
                     break;
 
                 case "2":
                 case "02":
                 case "fevereiro":
-                    dias = 28;
                     break;
-
-                default:
-                    MessageBox.Show("Este mês tem 31 dias!!!");
-                    return;
             }
 
-            MessageBox.Show($"Este mês tem" + dias + " dias!!!");
-        }
-
-        //Atividade 5
-        private void btMedia_Click(object sender, EventArgs e)
-        {
-            string nome = txtNome.Text;
-            double n1 = Convert.ToDouble(txtCampo.Text);
-            double n2 = Convert.ToDouble(txtCampo.Text);
-            double n3 = Convert.ToDouble(txtCampo.Text);
-
-            double media = (n1 + n2 + n3) / 3;
-
-            if (media >= 7)
-            {
-                MessageBox.Show("O aluno " + nome + " está APROVADO! Média: " + media);
-            }
-            else
-            {
-                MessageBox.Show("O aluno " + nome + " está REPROVADO! Média: " + media);
-            }
-        }
-
-        //Atividade 6
-        private void btAumento_Click(object sender, EventArgs e)
-        {
-            double salarioAtual = Convert.ToDouble(txtCampo.Text);
-            double novoSalario = 0;
-            double aumento = 0;
-
-            if (salarioAtual < 1000)
-            {
-                aumento = salarioAtual * 0.20;
-            }
-            else if (salarioAtual >= 1000 || salarioAtual <= 2000)
-            {
-                aumento = salarioAtual * 0.15;
-            }
-            else
-            {
-                aumento = salarioAtual * 0.10;
-            }
-            novoSalario = salarioAtual + aumento;
-
-            MessageBox.Show("Aumento de: R$ " + aumento +
-                            "\nSeu salário é: R$ " + novoSalario);
+            MessageBox.Show("Este mes tem: " + dias + " dias");
         }
     }
-    
-    
 }
 
     

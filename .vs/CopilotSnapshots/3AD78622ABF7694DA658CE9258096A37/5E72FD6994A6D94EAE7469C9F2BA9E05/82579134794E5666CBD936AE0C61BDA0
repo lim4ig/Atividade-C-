@@ -135,49 +135,27 @@ namespace Atividade_C_
         //Atividade 5
         private void btMedia_Click(object sender, EventArgs e)
         {
-            string nome = txtNome.Text;
-            double n1 = Convert.ToDouble(txtCampo.Text);
-            double n2 = Convert.ToDouble(txtCampo.Text);
-            double n3 = Convert.ToDouble(txtCampo.Text);
+            string nomeAluno = txtNome.Text;
+            int nota1, nota2, nota3;
 
-            double media = (n1 + n2 + n3) / 3;
-
-            if (media >= 7)
             {
-                MessageBox.Show("O aluno " + nome + " está APROVADO! Média: " + media);
+                int media = (nota1, nota2, nota3) / 3;
+
+                if (media >= 7)
+                {
+                    MessageBox.Show($"O aluno {nomeAluno} foi APROVADO com média {media:F2}!");
+                }
+                else
+                {
+                    MessageBox.Show($"O aluno {nomeAluno} foi REPROVADO com média {media:F2}.");
+                }
             }
             else
             {
-                MessageBox.Show("O aluno " + nome + " está REPROVADO! Média: " + media);
+                MessageBox.Show("Por favor, insira valores numéricos válidos em todas as notas.");
             }
-        }
-
-        //Atividade 6
-        private void btAumento_Click(object sender, EventArgs e)
-        {
-            double salarioAtual = Convert.ToDouble(txtCampo.Text);
-            double novoSalario = 0;
-            double aumento = 0;
-
-            if (salarioAtual < 1000)
-            {
-                aumento = salarioAtual * 0.20;
-            }
-            else if (salarioAtual >= 1000 || salarioAtual <= 2000)
-            {
-                aumento = salarioAtual * 0.15;
-            }
-            else
-            {
-                aumento = salarioAtual * 0.10;
-            }
-            novoSalario = salarioAtual + aumento;
-
-            MessageBox.Show("Aumento de: R$ " + aumento +
-                            "\nSeu salário é: R$ " + novoSalario);
         }
     }
-    
     
 }
 
