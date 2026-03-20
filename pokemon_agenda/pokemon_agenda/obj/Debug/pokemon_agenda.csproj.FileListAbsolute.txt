@@ -8,3 +8,15 @@ C:\Users\igorr\source\repos\pokemon_agenda\pokemon_agenda\obj\Debug\pokemon_agen
 C:\Users\igorr\source\repos\pokemon_agenda\pokemon_agenda\obj\Debug\pokemon_agenda.csproj.CoreCompileInputs.cache
 C:\Users\igorr\source\repos\pokemon_agenda\pokemon_agenda\obj\Debug\pokemon_agenda.exe
 C:\Users\igorr\source\repos\pokemon_agenda\pokemon_agenda\obj\Debug\pokemon_agenda.pdb
+C:\Users\igorr\Documents\GitHub\Atividade-C-\pokemon_agenda\pokemon_agenda\obj\Debug\pokemon_agenda.csproj.AssemblyReference.cache
+C:\Users\igorr\Documents\GitHub\Atividade-C-\pokemon_agenda\pokemon_agenda\obj\Debug\pokemon_agenda.fnCadastroPokemon.resources
+C:\Users\igorr\Documents\GitHub\Atividade-C-\pokemon_agenda\pokemon_agenda\obj\Debug\pokemon_agenda.Properties.Resources.resources
+C:\Users\igorr\Documents\GitHub\Atividade-C-\pokemon_agenda\pokemon_agenda\obj\Debug\pokemon_agenda.csproj.GenerateResource.cache
+C:\Users\igorr\Documents\GitHub\Atividade-C-\pokemon_agenda\pokemon_agenda\obj\Debug\pokemon_agenda.csproj.CoreCompileInputs.cache
+C:\Users\igorr\Documents\GitHub\Atividade-C-\pokemon_agenda\pokemon_agenda\obj\Debug\pokemon_agenda.exe
+C:\Users\igorr\Documents\GitHub\Atividade-C-\pokemon_agenda\pokemon_agenda\obj\Debug\pokemon_agenda.pdb
+C:\Users\igorr\Documents\GitHub\Atividade-C-\pokemon_agenda\pokemon_agenda\bin\Debug\pokemon_agenda.exe.config
+C:\Users\igorr\Documents\GitHub\Atividade-C-\pokemon_agenda\pokemon_agenda\bin\Debug\pokemon_agenda.exe
+C:\Users\igorr\Documents\GitHub\Atividade-C-\pokemon_agenda\pokemon_agenda\bin\Debug\pokemon_agenda.pdb
+C:\Users\igorr\Documents\GitHub\Atividade-C-\pokemon_agenda\pokemon_agenda\obj\Debug\pokemon_agenda.Pokemon.resources
+C:\Users\igorr\Documents\GitHub\Atividade-C-\pokemon_agenda\pokemon_agenda\obj\Debug\pokemon_agenda.Form1.resources

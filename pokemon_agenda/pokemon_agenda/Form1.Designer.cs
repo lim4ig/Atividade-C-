@@ -31,18 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fnCadastroPokemon));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtLimpar = new System.Windows.Forms.Button();
-            this.txtSalvar = new System.Windows.Forms.Button();
+            this.cbTipo = new System.Windows.Forms.ComboBox();
+            this.numNivel = new System.Windows.Forms.NumericUpDown();
+            this.btLimpar = new System.Windows.Forms.Button();
+            this.btSalvar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.numNivel = new System.Windows.Forms.NumericUpDown();
-            this.cbTipo = new System.Windows.Forms.ComboBox();
+            this.btAjuda = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numNivel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -58,40 +59,97 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btAjuda);
             this.groupBox1.Controls.Add(this.cbTipo);
             this.groupBox1.Controls.Add(this.numNivel);
-            this.groupBox1.Controls.Add(this.txtLimpar);
-            this.groupBox1.Controls.Add(this.txtSalvar);
+            this.groupBox1.Controls.Add(this.btLimpar);
+            this.groupBox1.Controls.Add(this.btSalvar);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtNome);
             this.groupBox1.Location = new System.Drawing.Point(26, 130);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(309, 200);
+            this.groupBox1.Size = new System.Drawing.Size(309, 244);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro Pokémon";
             // 
-            // txtLimpar
+            // cbTipo
             // 
-            this.txtLimpar.Location = new System.Drawing.Point(157, 162);
-            this.txtLimpar.Name = "txtLimpar";
-            this.txtLimpar.Size = new System.Drawing.Size(145, 32);
-            this.txtLimpar.TabIndex = 7;
-            this.txtLimpar.Text = "Limpar";
-            this.txtLimpar.UseVisualStyleBackColor = true;
-            this.txtLimpar.Click += new System.EventHandler(this.txtLimpar_Click);
+            this.cbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTipo.FormattingEnabled = true;
+            this.cbTipo.Items.AddRange(new object[] {
+            "Normal",
+            "",
+            "Fogo",
+            "",
+            "Água",
+            "",
+            "Grama",
+            "",
+            "Elétrico",
+            "",
+            "Gelo",
+            "",
+            "Lutador",
+            "",
+            "Venenoso",
+            "",
+            "Terra",
+            "",
+            "Voador",
+            "",
+            "Psíquico",
+            "",
+            "Inseto",
+            "",
+            "Pedra",
+            "",
+            "Fantasma",
+            "",
+            "Dragão"});
+            this.cbTipo.Location = new System.Drawing.Point(107, 58);
+            this.cbTipo.Name = "cbTipo";
+            this.cbTipo.Size = new System.Drawing.Size(187, 33);
+            this.cbTipo.TabIndex = 9;
             // 
-            // txtSalvar
+            // numNivel
             // 
-            this.txtSalvar.Location = new System.Drawing.Point(6, 162);
-            this.txtSalvar.Name = "txtSalvar";
-            this.txtSalvar.Size = new System.Drawing.Size(145, 32);
-            this.txtSalvar.TabIndex = 6;
-            this.txtSalvar.Text = "Salvar";
-            this.txtSalvar.UseVisualStyleBackColor = true;
-            this.txtSalvar.Click += new System.EventHandler(this.txtSalvar_Click);
+            this.numNivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numNivel.Location = new System.Drawing.Point(107, 98);
+            this.numNivel.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numNivel.Name = "numNivel";
+            this.numNivel.Size = new System.Drawing.Size(187, 32);
+            this.numNivel.TabIndex = 8;
+            this.numNivel.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // btLimpar
+            // 
+            this.btLimpar.Location = new System.Drawing.Point(157, 162);
+            this.btLimpar.Name = "btLimpar";
+            this.btLimpar.Size = new System.Drawing.Size(145, 32);
+            this.btLimpar.TabIndex = 7;
+            this.btLimpar.Text = "Limpar";
+            this.btLimpar.UseVisualStyleBackColor = true;
+            // 
+            // btSalvar
+            // 
+            this.btSalvar.Location = new System.Drawing.Point(6, 162);
+            this.btSalvar.Name = "btSalvar";
+            this.btSalvar.Size = new System.Drawing.Size(145, 32);
+            this.btSalvar.TabIndex = 6;
+            this.btSalvar.Text = "Salvar";
+            this.btSalvar.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -142,63 +200,14 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // numNivel
+            // btAjuda
             // 
-            this.numNivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNivel.Location = new System.Drawing.Point(107, 98);
-            this.numNivel.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numNivel.Name = "numNivel";
-            this.numNivel.Size = new System.Drawing.Size(187, 32);
-            this.numNivel.TabIndex = 8;
-            this.numNivel.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // cbTipo
-            // 
-            this.cbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTipo.FormattingEnabled = true;
-            this.cbTipo.Items.AddRange(new object[] {
-            "Normal",
-            "",
-            "Fogo",
-            "",
-            "Água",
-            "",
-            "Grama",
-            "",
-            "Elétrico",
-            "",
-            "Gelo",
-            "",
-            "Lutador",
-            "",
-            "Venenoso",
-            "",
-            "Terra",
-            "",
-            "Voador",
-            "",
-            "Psíquico",
-            "",
-            "Inseto",
-            "",
-            "Pedra",
-            "",
-            "Fantasma",
-            "",
-            "Dragão"});
-            this.cbTipo.Location = new System.Drawing.Point(107, 58);
-            this.cbTipo.Name = "cbTipo";
-            this.cbTipo.Size = new System.Drawing.Size(187, 33);
-            this.cbTipo.TabIndex = 9;
+            this.btAjuda.Location = new System.Drawing.Point(85, 200);
+            this.btAjuda.Name = "btAjuda";
+            this.btAjuda.Size = new System.Drawing.Size(145, 32);
+            this.btAjuda.TabIndex = 10;
+            this.btAjuda.Text = "Ajuda";
+            this.btAjuda.UseVisualStyleBackColor = true;
             // 
             // fnCadastroPokemon
             // 
@@ -213,8 +222,8 @@
             this.Text = "Pokémon Agenda ";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numNivel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,10 +238,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button txtLimpar;
-        private System.Windows.Forms.Button txtSalvar;
+        private System.Windows.Forms.Button btLimpar;
+        private System.Windows.Forms.Button btSalvar;
         private System.Windows.Forms.NumericUpDown numNivel;
         private System.Windows.Forms.ComboBox cbTipo;
+        private System.Windows.Forms.Button btAjuda;
     }
 }
 
